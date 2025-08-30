@@ -4,10 +4,11 @@ import { Header } from "./header/header";
 
 @Component({
   selector: 'app-root',
-  imports: [Header],
+  imports: [Header , RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('ecomm-web');
 }
+
